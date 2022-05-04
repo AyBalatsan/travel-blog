@@ -15,10 +15,12 @@ const Main = () => {
         <div className='container'>
           <PostsWrapper>
             <Post>
-              <PostShell>
-                <PostImg bgImage='https://fb.ru/misc/i/gallery/48915/2279925.jpg' />     
-                <PostText>Мальдивы. Рай или пафос ?</PostText>
-              </PostShell>
+              <Link href={'/post/[id]'} as={'/post/test-rop'}>
+                <PostShell>
+                  <PostImg bgImage='https://fb.ru/misc/i/gallery/48915/2279925.jpg' />
+                  <PostText>Мальдивы. Рай или пафос ?</PostText>
+                </PostShell>
+              </Link>
             </Post>
             <Post>
               <PostShell>

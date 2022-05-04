@@ -1,6 +1,24 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 
+
+
+const Navbar = () => {
+  return (
+    <Nav >
+      <div className='container'>
+        <NavbarItem>
+          <Logo>NEXT | BLOG</Logo>
+          <Link href='/add-post'>
+            <AddPostBtn>Добавить статью</AddPostBtn>
+          </Link>
+        </NavbarItem>
+      </div>
+    </Nav>
+  )
+}
+export default Navbar
+
 const Nav = styled.nav`
   background-color: #fefefe;
   padding: 17px 0;
@@ -39,19 +57,3 @@ const AddPostBtn = styled.a`
     background: #4eb3fc;
   }
 `
-
-const Navbar = () => {
-  return (
-    <Nav >
-      <div className='container'>
-        <NavbarItem>
-          <Logo>NEXT | BLOG</Logo>
-          <Link href='/add-post'>
-            <AddPostBtn>Добавить статью</AddPostBtn>
-          </Link>
-        </NavbarItem>
-      </div>
-    </Nav>
-  )
-}
-export default Navbar
